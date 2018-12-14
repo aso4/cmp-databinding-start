@@ -1,5 +1,11 @@
 <div class="container">
-  <app-cockpit></app-cockpit>
+  <!-- event hasn't been written yet -->
+  <!-- $ catches the data -->
+  <app-cockpit
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)"
+    >
+  </app-cockpit>
   <hr>
   <div class="row">
     <div class="col-xs-12">
