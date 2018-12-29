@@ -15,6 +15,7 @@ import {
 })
 export class ServerElementComponent implements OnInit, OnChanges {
   @Input('srvElement') element: {type: string, name: string, content: string}; // decorator that's like a function, needs to be executed
+  @Input() name: string;
 
   constructor() {
     console.log('constructor called!');
